@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 first_dollar = True
 processed_text = ''
 filename = input('Type the name of the file.\n')
