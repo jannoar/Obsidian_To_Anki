@@ -3,6 +3,7 @@
 first_dollar = True
 processed_text = ''
 filename = input('Type the name of the file.\n')
+processed_filename = filename[:-3] + '_processed.md'
 
 with open(filename, 'r') as f:
     text = f.read()
@@ -19,5 +20,5 @@ with open(filename, 'r') as f:
         processed_text += char
     print('Nachher: ', processed_text)
 
-with open(filename, 'w') as f:
+with open(processed_filename, 'w') as f:
     f.write(processed_text)
