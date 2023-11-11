@@ -10,7 +10,7 @@ with open(filename, 'r') as f:
     print('Vorher: ', text)
 
     for char in text:
-        if char == '$':
+        if char == '$' and (char-1) != '\\':
             if first_dollar is True:
                 char = r'\('
                 first_dollar = False
